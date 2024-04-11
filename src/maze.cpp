@@ -228,6 +228,7 @@ void init()
 //---------------------------------------
 void drawMaze() {
    glScalef(0.25, 0.25, 0.25);
+   glTranslatef(-xLength/2, -yLength/2, 0);
    for(int i = 0; i < xLength; i++) {
       for(int j = 0; j < yLength; j++) {
          block(i, j, -0.1, i + 1, j + 1, 0, "grass");
